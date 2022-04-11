@@ -7,6 +7,7 @@ import Layout from "../components/layout";
 import getRandomArbitrary from "../helpers/random";
 
 import { Quotes } from "../interfaces/quotes";
+import { motion } from 'framer-motion'
 
 
 
@@ -46,9 +47,28 @@ export default function ShowQuotes(){
                    <div className="min-h-1/2  mx-auto">
                       {
                         author?(
-                            <h1 className="border-l-4  pl-10 md:pl-24 border-transparent get-name text-3xl md:text-4xl font-bold pb-20">
+                            <motion.h1
+                            initial={
+                              {
+                               
+                                opacity:0
+                              }
+                            } 
+                            transition={
+                              {
+                               
+                                duration:1
+                              }
+                            }
+                            animate={
+                              {
+                               
+                                opacity:1
+                              }
+                            }
+                            className="border-l-4  pl-10 md:pl-24 border-transparent get-name text-3xl md:text-4xl font-bold pb-20">
                                 {capitalizeName?.join(' ')}
-                       </h1>
+                       </motion.h1>
                         ):(
                             <div className="pb-24">
 
@@ -59,11 +79,31 @@ export default function ShowQuotes(){
                       
                        
                     {
-                        data.map((data)=>{
+                        data.map((data,i)=>{
                           return (
-                              <p key={data._id} className="qouteData text-2xl  md:text-4xl font-bold border-l-4 pl-10 md:pl-24 border-yellow-F7DF94 mb-24">
+                              <motion.p 
+                              key={data._id}
+                              initial={
+                                {
+                                  y:150,
+                                  opacity:0
+                                }
+                              } 
+                              transition={
+                                {
+                                  delay:parseFloat(`${i}`),
+                                  duration:2
+                                }
+                              }
+                              animate={
+                                {
+                                  y:0,
+                                  opacity:1
+                                }
+                              }
+                              className="qouteData text-2xl  md:text-4xl font-bold border-l-4 pl-10 md:pl-24 border-yellow-F7DF94 mb-24">
                                   {data.quoteText}
-                              </p>
+                              </motion.p>
                           )
                         })
                     }

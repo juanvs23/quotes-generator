@@ -57,6 +57,8 @@ Quotes generator is a simple react app with  vitejs, typescript and fetch API.
 
 - [React](https://reactjs.org/)
 - [typescript](https://www.typescriptlang.org/)
+- [Tailwindscss](https://tailwindcss.com/)
+- [Framer motion](https://www.framer.com/)
 - Envieroment [vite js](https://vitejs.dev/)
 
 ## Features

@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://verdant-cherries.surge.sh/">
+    <a href="https://inquisitive-island.surge.sh">
       Demo
     </a>
     <span> | </span>

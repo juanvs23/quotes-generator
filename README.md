@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://verdant-cherries.surge.sh/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/juanvs23/quotes-generator">
       Solution
     </a>
     <span> | </span>
@@ -38,13 +38,17 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://i.imgur.com/0pSmsFT.jpg)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+Quotes generator is a simple react app with  vitejs, typescript and fetch API. 
 
 - Where can I see your demo?
+  [Here](https://verdant-cherries.surge.sh/author/john-jay-hooker)
 - What was your experience?
+  this project was very interesting, because I use first time tailwindcss, and react 18.0.0 version too.
 - What have you learned/improved?
+  - tailwindcss
+  - React 18
 - Your wisdom? :)
 
 ### Built With
@@ -66,11 +70,11 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- For example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [yarn](https://yarnpkg.com/)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/juanvs23/quotes-generator.git
 
 # Install dependencies
 $ yarn 
@@ -89,6 +93,6 @@ $ yarn run dev
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [https://next-portafolio-six.vercel.app/]([https://{your-web-site-link}](https://next-portafolio-six.vercel.app/))
+- GitHub [@juanvs23](https://github.com/juanvs23)
+- Twitter [@juanvs23](https://twitter.com/juanvs23)

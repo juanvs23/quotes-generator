@@ -1,20 +1,14 @@
 import { Link } from "react-router-dom";
-import { Author } from "../interfaces/quotes";
-import { FaLongArrowAltRight } from "react-icons/fa";;
 
-export default function ButtonAuthor({quoteAuthor,quoteGenre}:Author ){
-    const quoteAuthorPath =quoteAuthor? quoteAuthor.toLowerCase().split(' ').join('-'):''
-    return( <Link className="justify-between items-center flex w-full hover:bg-gray-51 p-10 transition-all duration-300 md:ml-10 hover:text-white " to={`author/${quoteAuthorPath}`}>
-            <div>
-               <span className="block font-bold text-xl">
-                {quoteAuthor}
-                
-                </span> 
-                <small className=" text-lg">
-                {quoteGenre}
+import { FaLongArrowAltRight } from "react-icons/fa";
 
-                </small>
-            </div>
-                <FaLongArrowAltRight color="white" size="2rem" />
-        </Link>)
+export default function ButtonAuthor({ author }: { author: string }) {
+  const quoteAuthorPath = author
+    ? author.toLowerCase().split(" ").join("-")
+    : "";
+  return (
+    <div className="flex items-center justify-between w-full p-10 transition-all duration-300 hover:bg-gray-51 md:ml-10 hover:text-white ">
+      <span className="block text-xl font-bold">{author}</span>
+    </div>
+  );
 }

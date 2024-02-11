@@ -1,10 +1,5 @@
-export interface Quotes{
-    _id?: string, 
-    quoteText?: string, 
-    quoteAuthor?: string, 
-    quoteGenre?:string
-}
-export interface Author{
-    quoteAuthor:string|undefined,
-    quoteGenre:string |undefined
+export interface Quotes {
+  id: string;
+  quote: string;
+  author?: string;
 }

@@ -7,10 +7,7 @@ import RandomQuotes from './pages/randomQuotes'
 function App() {
  
   return (
-    <Routes >
-        <Route path="/" element={<RandomQuotes />} />
-        <Route path="author/:author" element={<AuthorQuotes />} />
-      </Routes>
+    <RandomQuotes />
   )
 }
 

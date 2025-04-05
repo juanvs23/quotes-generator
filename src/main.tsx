@@ -3,6 +3,7 @@ import './index.css'
 import App from './App'
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from "react-router-dom";
+import { ContextProvider } from './context/refreshContext';
 
 
 // Before
@@ -16,8 +17,10 @@ if(container){
 
   const root = createRoot(container);
   root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <ContextProvider>
+   
+      <App />
+   
+  </ContextProvider>
   );
 }

@@ -2,13 +2,14 @@
 import { ChildrenLayout } from "../interfaces/components";
 import Footer from "./footer";
 import GetRandom from "./GetRandom";
-import { Helmet } from "react-helmet";
+
 import { motion } from 'framer-motion'
+import { HelmetProvider,Helmet } from "react-helmet-async";
 
 
 const Layout=({children,title}:ChildrenLayout)=>{
     return (
-   <>
+   <HelmetProvider >
    <Helmet >
    <title>{title}</title>
    </Helmet>
@@ -24,7 +25,7 @@ const Layout=({children,title}:ChildrenLayout)=>{
         </motion.div>
      <Footer />   
     </div>
-   </>
+   </HelmetProvider>
     )
 }
 export default Layout
